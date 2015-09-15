@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>Live Web Assignment 01</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    <!-- center image -->
+    <img class="face" src="face.png" alt="face">
+
+    <!-- gifs? -->  
+    <div id="gifs">
+        <img src="dog.gif" alt="cuddle" id="dogGif">
+        <img src="cat01.gif" alt="catBao" id="catGif">
+        <img src="lemon1.gif" alt="catBao" id="foodGif">
+        <img src="lemon.gif" alt="life" id="lemonGif">
+    </div>
+    <video controls id="v1" autoplay>
+        <source id="v0" src="blackhole.webm" type="video/webm">
+    </video>
+
+    <!-- dots as placeholders for popcorn -->
+    <div id="placeholders">
+        <img id="p1" src="dot.JPG" alt="dog">
+        <img id="p2" src="dot.JPG" alt="cat">
+        <img id="p3" src="dot.JPG" alt="food">
+        <img id="p4" src="dot.JPG" alt="lemon">
+        <!-- <img id="p5" src="dot.JPG" alt="lizlemon"> -->
+    </div>
+
+    <script type="text/javascript">
+
+        // console.log();
+        $("#p1").on('click',
+            function () {
+                // $('#v0').pause();
+                $('#v1').hide();
+                $('#catGif').hide();
+                $('#foodGif').hide();
+                $('#lemonGif').hide();
+                $('#dogGif').show();
+            });
+
+        $("#p2").on('click',
+            function () {
+                $('#v1').hide();
+                $('#dogGif').hide();
+                $('#foodGif').hide();
+                $('#lemonGif').hide();
+                $('#catGif').show();
+            });
+
+        $("#p3").on('click',
+            function () {
+                $('#v1').hide();
+                $('#dogGif').hide();
+                $('#catGif').hide();
+                $('#lemonGif').hide();
+                $('#foodGif').show();
+            });
+
+        $("#p4").on('click',
+            function () {
+                $('#v1').hide();
+                $('#dogGif').hide();
+                $('#foodGif').hide();
+                $('#catGif').hide();
+                $('#lemonGif').show();
+            });
+
+        // $("#p5").on('click',
+        //     function () {
+        //         $('#v1').hide();
+        //         $('#dogGif').hide();
+        //         $('#foodGif').hide();
+        //         $('#lemonGif').hide();
+        //         $('#catGif').show();
+        //     });
+
+
+
+
+
+
+
+
+
+            // // Try to load videos into an Array
+            // var currentVid = 'SamoyedPuppy.webm';
+            // var videoArray = ['SamoyedPuppy.webm', 'Liz_mistakes.webm'];
+
+            // var theVideo = document.getElementById('currentVid');
+
+
+            // // Click & Play
+
+
+
+
+            // // CODE FROM SHAWN
+            // var theVideoObject = document.getElementById("cuddle");
+            // var placeholder01 = document.getElementById("p01")
+            
+            // function playVideo() {
+            //     // theVideoObject.width = theVideoObject.width/2;
+            //     if (theVideoObject.paused) {
+            //         theVideoObject.play();
+            //     } else {
+            //         theVideoObject.pause();
+            //     }               
+            // }
+        </script>
+</body>
+</html>
+
+<!-- <video width="720" height="480" controls id="thevideo">
+    <source src="video.webm" type="video/webm">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+    http://giphy.com/gifs/Ev17f0KeO9qkE/html5
+</video> -->
