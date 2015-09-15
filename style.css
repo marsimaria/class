@@ -1,0 +1,66 @@
+img.face {
+
+	position: absolute;
+	margin-left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-top: 500px;
+
+}
+
+#gifs img {
+
+	position: absolute;
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 460;
+	height: 120px;
+}
+
+video {
+
+	position: absolute;
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 460;
+	height: 120px;
+}
+
+#placeholders img {
+
+	height: 50px;
+	width: 50px;
+}
+
+
+#p1 {
+
+	position: absolute;
+	margin-left: 330px;
+	margin-top: 250px;
+
+}
+
+#p2 {
+
+	position: absolute;
+	margin-left: 283px;
+	margin-top: 323px;
+
+}
+
+#p3 {
+
+	position: absolute;
+	margin-left: 179px;
+	margin-top: 271px;
+
+}
+
+#p4 {
+
+	position: absolute;
+	margin-left: 380px;
+	margin-top: 305px;
+
+}
